@@ -1,6 +1,7 @@
-<form method="POST" action="/api/register">
+<form method="POST" action="/api/login">
     {{ form.csrf_token }}
     <div> {{ form.username.label }}: {{ form.username(size=20) }} </div>
     <div> {{ form.password.label }}: {{ form.password(size=20) }} </div>
-    <div> <input type="submit" value="Register"> </div>
+    <div> {{ form.remember_me.label }}: {{ form.remember_me }} </div>
+    <div> <input type="submit" value="Login"> </div>
 </form>
