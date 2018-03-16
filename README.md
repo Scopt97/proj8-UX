@@ -8,6 +8,9 @@ generation, you will add three additional functionalities in your UI: (a) rememb
 and (c) CSRF protection. Note: You don’t have to maintain sessions.
 
 
-####Notes:
+#### Notes:
 credentials.ini goes in the app/ folder
 The resources still use token authentication (and expect the token in a "token" header)
+
+
+### Author: Kyle Nielsen  Contact: kylen@uoregon.edu
