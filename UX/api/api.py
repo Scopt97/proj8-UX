@@ -62,7 +62,7 @@ class All(Resource):
             top = request.args.get('top')
             top = int(top)
             data = []
-            data = db.tododb.find().limit(top+1)  # top+1 because just 'top' returned 1 value too few when sorting
+            data = db.tododb.find().limit(top)  # top+1 because just 'top' returned 1 value too few when sorting
 
         else:
             data = db.tododb.find()
@@ -89,7 +89,7 @@ class Open(Resource):
             top = request.args.get('top')
             top = int(top)
             data = []
-            data = db.tododb.find().limit(top+1)
+            data = db.tododb.find().limit(top)
 
         else:
             data = db.tododb.find()
@@ -117,7 +117,7 @@ class Close(Resource):
             top = request.args.get('top')
             top = int(top)
             data = []
-            data = db.tododb.find().limit(top+1)
+            data = db.tododb.find().limit(top)
 
         else:
             data = db.tododb.find()
@@ -145,7 +145,7 @@ class AllCSV(Resource):
             top = request.args.get('top')
             top = int(top)
             data = []
-            data = db.tododb.find().limit(top+1)
+            data = db.tododb.find().limit(top)
 
         else:
             data = db.tododb.find()
@@ -174,7 +174,7 @@ class OpenCSV(Resource):
             top = request.args.get('top')
             top = int(top)
             data = []
-            data = db.tododb.find().limit(top+1)
+            data = db.tododb.find().limit(top)
 
         else:
             data = db.tododb.find()
@@ -202,7 +202,7 @@ class CloseCSV(Resource):
             top = request.args.get('top')
             top = int(top)
             data = []
-            data = db.tododb.find().limit(top+1)
+            data = db.tododb.find().limit(top)
 
         else:
             data = db.tododb.find()

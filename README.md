@@ -7,12 +7,7 @@ a facelift to the services. In addition to creating UI for basic authentication 
 generation, you will add three additional functionalities in your UI: (a) remember me, (b) logout, 
 and (c) CSRF protection. Note: You don’t have to maintain sessions.
 
-## Tasks
 
-You'll turn in your credentials.ini using which we will get the following:
-
-* The working application with three parts.
-
-* Dockerfile
-
-* docker-compose.yml
+####Notes:
+credentials.ini goes in the app/ folder
+The resources still use token authentication (and expect the token in a "token" header)
